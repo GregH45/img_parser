@@ -71,9 +71,7 @@ def open_and_validate_picture(picture_path: str) -> numpy.ndarray:
 
     # Check size
     if not checker.check_size():
-        raise Exception(
-            f"Picture too small, need to be 512x512. Current WxH: { image_width }x{ image_height }"
-        )
+        raise Exception(f"Picture too small, need to be 512x512.")
 
     if not checker.check_circle():
         raise Exception("The image is not circular")
