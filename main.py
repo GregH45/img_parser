@@ -2,12 +2,6 @@ import sys
 import cv2
 import numpy
 
-# We want users to upload a badge: an avatar within a circle.
-# Create a function taking a png as input and verifying that:
-# - Size = 512x512
-# - The only non transparent pixels are within a circle
-# - That the colors is the badge give a "happy" feeling
-# Additionally, you can create a parallel function that convert the given image (of any format) into the specified object.
 
 
 class Checker:
